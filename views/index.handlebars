@@ -1,0 +1,44 @@
+<div class="container-fluid" id="top-container">
+  <h1 id="main-title" class="text-center">Find your dream job!</h1>
+  <p id="main-subtitle" class="text-center">We are the site with the most tech
+    jobs!</p>
+  <form action="/" id="search-form" class="form-inline" method="GET">
+    <div class="form-group col-md-6">
+      <input
+        type="text"
+        class="form-control"
+        id="job"
+        name="job"
+        placeholder="What job are you looking for?"
+      />
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+  </form>
+</div>
+<main>
+  <div id="jobs-container" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {{#if search}}
+        <h2 id="job-list-title">Jobs found with: '{{search}}'</h2>
+        {{else}}
+        <h2 id="job-list-title">See featured jobs</h2>
+        {{/if}}
+        <ul id="job-list" class="list-group">
+          {{#each jobs }}
+          <li class="list-group-item {{#if dataValues.new_job}}new-job{{/if}}">
+            <img src="/images/company.svg" alt="Company" />
+            <p>{{dataValues.company}}</p>
+            <h3>{{dataValues.title}}</h3>
+            <p>R$ {{dataValues.salary}}</p>
+            <span class="new-job-label">New</span>
+            <a class="btn btn-primary">See</a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</main>
