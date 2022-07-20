@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  /* font-family: Helvetica, sans-serif */
+  font-family: Helvetica, sans-serif
 }
 
 .navbar {
@@ -19,11 +19,11 @@
 }
 
 .nav-item {
-  margin: 0 10px;
+  margin: 0 .62em;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 10px 25px;
+  padding: .62em 1.55em;
   /* font-weight: bold; */
 }
 
@@ -31,7 +31,7 @@
   color: #fff;
   background-color: #f03e3e;
   border: 1px solid transparent;
-  height: 45px;
+  height: 2.80em;
 }
 
 .nav-link.btn.btn-primary:hover,
@@ -47,7 +47,7 @@
   padding: 110px;
   background-color: #F7F9FC;
   border-bottom: 4px solid #013068;
-  margin-bottom: 30px;
+  margin-bottom: 1.88em;
   background-image: url("../images/banner2.jpg");
   background-position: 0 100px;
   background-size: cover;
@@ -55,30 +55,30 @@
 }
 
 #main-title {
-  padding: 30px 0;
+  padding: 1.88em 0;
   font-size: 2rem;
 }
 
 #main-subtitle {
   font-size: 1rem;
-  padding-bottom: 80px;
+  padding-bottom: 5em;
 }
 
 #search-form {
-  padding: 30px 100px;
+  padding: 1.88em 6.25em;
 }
 
 #search-form .col-md-6, #search-form .col-md-2 {
   padding: 0;
-  margin-right: 10px;
+  margin-right: .62em;
 }
 
 
 #search-form input, #search-form button {
   width: 100%;
   border-radius: 5px;
-  height: 45px;
-  font-size: 18px;
+  height: 2.8em;
+  font-size: 1.12em;
 }
 
 #search-form button {
@@ -94,44 +94,44 @@
 }
 
 #jobs-container {
-  padding: 0 100px;
-  padding-bottom: 50px;
+  padding: 0 6.25em;
+  padding-bottom: 3.12em;
 }
 
 #job-list .list-group-item {
-  margin-bottom: 8px;
+  margin-bottom: .5em;
   border: 1px solid #CCC;
-  padding: 15px 110px;
+  padding: .9em 6.88em;
   color: #212529;
-  height: 120px;
+  height: 7.5em;
 }
 
 #job-list .list-group-item p {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 0.88em;
+  margin-bottom: 0.31em;
 }
 
 
 #job-list-title {
-  margin-bottom: 35px;
+  margin-bottom: 2.19em;
 }
 
 .list-group-item img {
-  width: 80px;
+  width: 5em;
   border: 1px solid #212529;
   border-radius: 50%;
   background-color: #FFF;
   position: absolute;
-  left: 15px;
+  left: 0.94em;
   top: calc(50% - 40px);
 }
 
 .list-group-item a {
   position: absolute;
-  right: 20px;
-  top: 35px;
-  height: 50px;
-  line-height: 35px;
+  right: 1.25em;
+  top: 2.20em;
+  height: 3.12em;
+  line-height: 2.18em;
   background-color: #F03E3E;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -145,8 +145,8 @@
   font-weight: bold;
   padding: 5px 10px;
   position: absolute;
-  right: 250px;
-  top: 40px;
+  right: 15.6em;
+  top: 2.5em;
   display: none;
 }
 
@@ -160,39 +160,91 @@
 
 /* add page */
 #add-form-container{
-  margin-top: 100px;
+  margin-top: 6.25em;
 }
 
 #add-form-container h2{
-  font-size: 25px;
+  font-size: 1.55em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 1.9em;
 }
 
 #add-form-container form label{
-  padding: 5px;
+  padding: .3em;
   font-weight: bold;
 }
 
 #add-form-container form input, #add-form-container form textarea{
-  margin-bottom: 10px;
+  margin-bottom: 0.6em;
   background-color: #f8f9fa;
 }
 
 #form-box{
-  padding: 50px;
+  padding: 3.1em;
   box-shadow: 0 1px 10px rgba(0,0,0,.15);
   border-radius: 5px;
   background-color: #fff;
-  margin-bottom: 50px;
-  margin-top: 25px;
+  margin-bottom: 3.1em;
+  margin-top: 1.6em;
 }
 
 #form-box button{
   background-color: #F03E3E;
   color: white;
-  height: 50px;
-  width: 120px;
+  height: 3.1em;
+  width: 7.5em;
   border: 1px solid transparent;
-  margin-top: 15px;
+  margin-top: .9em;
 }
+
+
+/* view do job (vaga) */
+#job-view-container{
+  margin-top: 6.25em;
+}
+
+#job-view-container h1{
+  margin-bottom: 1.9em;
+}
+
+#img-container{
+  margin-top: 20px;
+  margin-bottom: 1.9em;
+}
+
+#img-container img{
+  width: 6.25em;
+  border-radius: 50%;
+  border: 1px solid #212529;
+}
+
+.job-description{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-bold{
+  font-weight: bold;
+}
+
+.main-color{
+  color: #f03e3e;
+}
+
+.back-link{
+  border: 1px solid #f03e3e;
+  padding: 8px 12px;
+  transition: .5s;
+  border-radius: 4px;
+}
+
+.back-link{
+  text-decoration: none;
+}
+
+.back-link:hover{
+  background-color: #F03E3E;
+  color: #FFF;
+}
+
